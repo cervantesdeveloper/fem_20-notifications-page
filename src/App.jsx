@@ -1,33 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState, useEffect} from 'react'
+
+import Header from './components/Header'
+import Notifications from './components/Notifications'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [clearNotifications, setCleatNotifications] = useState(false)
+  const [notificationsNumer, setNotificationsNumber] = useState("0")
+  
+  const handleClick = ()=>{
+    setCleatNotifications(true)
+    setNotificationsNumber("0")
+  }
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setNotificationsNumber(document.querySelector("[data-number]").getAttribute("data-number"));
+    }, 500)
+  }, [])
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main >
+        <Header myOnClick = {handleClick} number={notificationsNumer}></Header>
+        <Notifications clear={clearNotifications} ></Notifications>
+      </main>
+      <footer >
+
+      </footer>
     </>
   )
 }

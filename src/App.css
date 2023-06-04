@@ -1,42 +1,134 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+  /*colors*/
+  --blue: rgb(10, 49, 123);
+  --red: rgb(246, 83, 81);
+  --white: #fff;
+  --grey-light: rgb(247, 250, 253);
+  --grey-medium-light: rgb(229, 239, 250);
+  --grey: rgb(221, 231, 238);
+  --grey-medium: rgb(147, 157, 174);
+  --grey-medium-dark:rgb(94, 103, 120);
+  --grey-dark: rgb(28, 32, 43);
+
+  /*fonts*/
+
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  
+}
+
+main{
+  max-width: 45.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--font-body);
+  padding: .625rem 1rem;
+  background-color: var(--white);
+}
+
+/* **** header start **** */
+header{
+  height: 3.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.score h1{
+  font-size: 1rem;
+  color: var(--grey-dark);
+  display: inline;
+}
+
+.score span{
+  display: inline-block;
+  width: 2rem;
+  height: 1.5rem;
+  margin-left: .625rem;
+  color: var(--white);
+  font-size: .75rem;
+  font-weight: 800;
   text-align: center;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+  background-color: var(--blue);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.score + button{
+  font-family: var(--font-body);
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--grey-medium-dark);
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score + button:hover{
+  color: var(--blue);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* **** header end **** */
+
+/* **** notifications start **** */
+.card-notification{
+  display: flex;
+  margin-top: .625rem;
+  padding: 1rem .75rem 1rem 1rem;
+  background-color: var(--white);
+  border-radius: .25rem;
 }
 
-.card {
-  padding: 2em;
+.card-notification.not-viewed{
+  background-color: var(--grey-light);
 }
 
-.read-the-docs {
-  color: #888;
+.card-notification img:first-child{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: .75rem;
+  border-radius: 50%;
 }
+
+.card-notification img:last-child{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: .75rem;
+}
+
+.card-notification__resume{
+  font-size: .9375rem;
+  line-height: 1.25;
+}
+
+.card-notification__resume p:first-child{
+  color: var(--grey-dark);
+  font-weight: 800;
+}
+
+.card-notification__resume span{
+  font-weight: 500;
+}
+
+.card-notification__resume span:first-child,
+.card-notification__resume p:last-child{
+  color: var(--grey-medium);
+}
+
+.card-notification__resume span:last-child{
+  color: var(--grey-medium-dark);
+}
+
+.card-notification__mesagge{
+  font-size: .9375rem;
+  line-height: 1.25;
+  margin-top: .625rem;
+  padding: 1rem;
+  color: var(--grey-medium);
+  border: 1px solid var(--grey);
+  border-radius: .25rem;
+}
+/* **** notifications end **** */

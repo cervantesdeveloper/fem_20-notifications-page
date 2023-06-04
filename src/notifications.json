@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "name": "Mark Webber",
+        "avatar": "mark-webber",
+        "action": "reacted to your recent post",
+        "subject": "My first tournament today!",
+        "message": "",
+        "relatedImage": "",
+        "timeFrame": "1m",
+        "watched": false
+    },
+
+    {
+        "id": 2,
+        "name": "Angela Gray",
+        "avatar": "angela-gray",
+        "action": "followed you",
+        "subject": "",
+        "message": "",
+        "relatedImage": "",
+        "timeFrame": "5m",
+        "watched": false
+    },
+
+    {
+        "id": 3,
+        "name": "Jacob Thompson",
+        "avatar": "jacob-thompson",
+        "action": "has joined your group",
+        "subject": "Chess Club",
+        "message": "",
+        "relatedImage": "",
+        "timeFrame": "1 day",
+        "watched": false
+    },
+
+    {
+        "id": 4,
+        "name": "Rizky Hasanuddin",
+        "avatar": "rizky-hasanuddin",
+        "action": "sent you a private message",
+        "subject": "",
+        "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and impriving my game.",
+        "relatedImage": "",
+        "timeFrame": "5 days",
+        "watched": true
+    },
+
+    {
+        "id": 5,
+        "name": "Kimberly Smith",
+        "avatar": "kimberly-smith",
+        "action": "commented on your picture",
+        "subject": "",
+        "message": "",
+        "relatedImage": "image-chess",
+        "timeFrame": "1 week",
+        "watched": true
+    },
+
+    {
+        "id": 6,
+        "name": "Nathan Peterson",
+        "avatar": "nathan-peterson",
+        "action": "reacted to your recent post",
+        "subject": "5 end-game strategies to increase your win rate",
+        "message": "",
+        "relatedImage": "",
+        "timeFrame": "2 weeks",
+        "watched": true
+    },
+
+    {
+        "id": 7,
+        "name": "Anna Kim",
+        "avatar": "anna-kim",
+        "action": "left the group",
+        "subject": "Chess Club",
+        "message": "",
+        "relatedImage": "",
+        "timeFrame": "2 weeks",
+        "watched": true
+    }
+]
