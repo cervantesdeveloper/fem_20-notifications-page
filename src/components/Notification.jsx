@@ -12,6 +12,7 @@ function Notification({
     viewed
 }){
     
+    
     return(
         <div 
             className={`card-notification ${viewed == false && "not-viewed"}`} 
@@ -20,7 +21,7 @@ function Notification({
             <img className="avatar" src={`./src/assets/avatars/avatar-${avatar}.webp`}></img>
             <div className="card-notification__content">
                 <div className="card-notification__resume">
-                    <p>{`${name}`} <span>{`${action}`}</span> <span>{`${subject}`}</span></p>
+                    <p>{`${name}`} <span> {`${action}`}</span> <span> {`${subject}`}</span></p>
                     <p>{timeFrame} ago</p>
                 </div>
                 {message.trim() != "" && (<p className="card-notification__mesagge">{message}</p>)}
