@@ -3,6 +3,7 @@ import { useState, useEffect} from 'react'
 
 import Header from './components/Header'
 import Notifications from './components/Notifications'
+import Footer from './components/Footer'
 
 function App() {
   const [clearNotifications, setCleatNotifications] = useState(false)
@@ -24,10 +25,9 @@ function App() {
       <main >
         <Header myOnClick = {handleClick} number={notificationsNumer}></Header>
         <Notifications clear={clearNotifications} ></Notifications>
+        
       </main>
-      <footer >
-
-      </footer>
+      <Footer />
     </>
   )
 }
