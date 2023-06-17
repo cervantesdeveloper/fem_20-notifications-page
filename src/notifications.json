@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Mark Webber",
-        "avatar": "mark-webber",
+        "avatar": "https://i.ibb.co/0sMTk5z/avatar-mark-webber.webp",
         "action": "reacted to your recent post",
         "subject": "My first tournament today!",
         "message": "",
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "name": "Angela Gray",
-        "avatar": "angela-gray",
+        "avatar": "https://i.ibb.co/ckLbFm7/avatar-angela-gray.webp",
         "action": "followed you",
         "subject": "",
         "message": "",
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "name": "Jacob Thompson",
-        "avatar": "jacob-thompson",
+        "avatar": "https://i.ibb.co/BZ08vQp/avatar-jacob-thompson.webp",
         "action": "has joined your group",
         "subject": "Chess Club",
         "message": "",
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "name": "Rizky Hasanuddin",
-        "avatar": "rizky-hasanuddin",
+        "avatar": "https://i.ibb.co/cNxXTSL/avatar-rizky-hasanuddin.webp",
         "action": "sent you a private message",
         "subject": "",
         "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and impriving my game.",
@@ -50,11 +50,11 @@
     {
         "id": 5,
         "name": "Kimberly Smith",
-        "avatar": "kimberly-smith",
+        "avatar": "https://i.ibb.co/B4sPnbW/avatar-kimberly-smith.webp",
         "action": "commented on your picture",
         "subject": "",
         "message": "",
-        "relatedImage": "image-chess",
+        "relatedImage": "https://i.ibb.co/RbTPktL/image-chess.webp",
         "timeFrame": "1 week",
         "watched": true
     },
@@ -62,7 +62,7 @@
     {
         "id": 6,
         "name": "Nathan Peterson",
-        "avatar": "nathan-peterson",
+        "avatar": "https://i.ibb.co/qrdBvwN/avatar-nathan-peterson.webp",
         "action": "reacted to your recent post",
         "subject": "5 end-game strategies to increase your win rate",
         "message": "",
@@ -74,7 +74,7 @@
     {
         "id": 7,
         "name": "Anna Kim",
-        "avatar": "anna-kim",
+        "avatar": "https://i.ibb.co/k4HvZ0Q/avatar-anna-kim.webp",
         "action": "left the group",
         "subject": "Chess Club",
         "message": "",

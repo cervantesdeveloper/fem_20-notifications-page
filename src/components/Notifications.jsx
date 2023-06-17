@@ -14,7 +14,7 @@ useEffect(()=>{
     fetch("http://localhost:5173/src/notifications.json")
         .then(res=> res.json())
         .then(data=> setNotifications(data))
-},[])
+}, [])
 
 useEffect(()=>{
     setNotSeen(notWatched)
@@ -26,6 +26,7 @@ useEffect(()=>{
 
 let list = notifications.map(notification=>{
     !notification.watched ? notWatched += 1 : notWatched += 0
+    
     return (
         <li key={notification.id}>
             <Notification
@@ -42,7 +43,6 @@ let list = notifications.map(notification=>{
         </li>
     )
 })
-
 
 
 Notifications.propTypes = {
