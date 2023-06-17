@@ -2,6 +2,7 @@ import { useEffect, useState} from "react"
 import PropTypes from "prop-types";
 
 import Notification from "./Notification"
+import datos from "../notifications.json"
 
 export default function Notifications({clear}){
 
@@ -11,9 +12,7 @@ const [notSeen, setNotSeen] = useState([]);
 let notWatched = 0
 
 useEffect(()=>{
-    fetch("http://localhost:5173/src/notifications.json")
-        .then(res=> res.json())
-        .then(data=> setNotifications(data))
+    setNotifications(datos)
 }, [])
 
 useEffect(()=>{
